@@ -2,7 +2,7 @@
   "name": "calculator",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://ssaikumar65.github.io/calculator",
+  "homepage": "https://ssaikumar65.github.io/calculator/",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -18,6 +18,7 @@ const Calculator = () => {
   }
 
   function calc(val: string) {
+    var eval2 = eval;
     let ops = ["+", "-", "/", "*", "."];
     if (
       (ops.includes(val) && value === "") ||
@@ -27,7 +28,7 @@ const Calculator = () => {
     }
 
     if (!ops.includes(val)) {
-      setResult(eval(value + val).toString());
+      setResult(eval2(value + val).toString());
     }
     setValue(value + val);
   }
@@ -46,10 +47,7 @@ const Calculator = () => {
 
   return (
     <div className="main">
-      <div className="res">
-        <span>({result || "0"})</span>
-        {value || "0"}
-      </div>
+      <div className="res">{value || "0"}</div>
       <div className="ops">
         <button onClick={() => calc("+")}>+</button>
         <button onClick={() => calc("-")}>-</button>

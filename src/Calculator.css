@@ -5,8 +5,9 @@
 }
 
 .main {
+  padding: 16px 20px;
   max-width: 400px;
-  background-color: var(--coral);
+  background-color: var(--dark);
   border-radius: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   display: flex;
@@ -16,6 +17,7 @@
 
 .res {
   padding: 16px 20px;
+  overflow-x: scroll;
   text-align: right;
   background-color: var(--dark);
   color: white;
@@ -44,6 +46,8 @@ button:hover {
 
 .ops {
   display: flex;
+  border-radius: 8px;
+  overflow: hidden;
 }
 .ops button {
   flex: 1 1 0%;
@@ -60,4 +64,15 @@ button:hover {
   background-color: var(--dark);
   max-width: 33.33%;
   font-weight: 500;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--coral);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
 }
